@@ -8,6 +8,7 @@ function appendToDisplay(input) {
 
 // Delete a character
 function deleteCharacter() {
+    displayOutput.value = "";
     displayInput.value = displayInput.value.slice(0,-1)
 }
 

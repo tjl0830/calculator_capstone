@@ -8,7 +8,7 @@ function appendToDisplay(input) {
 
 // Delete a character
 function deleteCharacter() {
-    displayInput.value = display.value.slice(0,-1)
+    displayInput.value = displayInput.value.slice(0,-1)
 }
 
 // Clears the display

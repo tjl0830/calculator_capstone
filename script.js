@@ -1,27 +1,29 @@
-const display = document.getElementById("display");
+const displayInput = document.getElementById("display-input");
+const displayOutput = document.getElementById("display-output");
 
 // Adds the value of each button press
 function appendToDisplay(input) {
-    display.value+= input;
+    displayInput.value+= input;
 }
 
 // Delete a character
 function deleteCharacter() {
-    display.value = display.value.slice(0,-1)
+    displayInput.value = display.value.slice(0,-1)
 }
 
 // Clears the display
 function clearDisplay() {
-    display.value = "";
+    displayInput.value = "";
+    displayOutput.value = "";
 }
 
 // Calculate the display value
 function calculate() {
     try {
-        display.value = eval(display.value);
+        displayOutput.value = eval(displayInput.value);
     }
     catch {
-        display.value = "Error";
+        displayOutput.value = "Error";
     }
 
 }

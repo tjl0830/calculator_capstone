@@ -8,7 +8,10 @@
 </head>
 <body>
     <section id="calculator">
-        <input id="display" readonly> <!-- readonly = read only, cannot be edited manually by user-->
+        <section id="display">
+            <input id="display-input" readonly> <!-- readonly = read only, cannot be edited manually by user-->
+            <input id="display-output" readonly> <!-- readonly = read only, cannot be edited manually by user-->
+        </section>
         <section id="buttons">
             <button id="button-c" onclick="clearDisplay()">c</button>
             <button id="button-del" onclick="deleteCharacter()">del</button>

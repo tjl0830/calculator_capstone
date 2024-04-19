@@ -53,6 +53,7 @@ body{
     border: none;
     background-color: rgb(0,0,0,0);
 }
+
 /* ---------- Buttons ---------- */
 
 #buttons {
@@ -104,6 +105,8 @@ button:active {
     width: 180px;
     height: 60px;
 }
+
+/* ---------- Mobile Responsiveness ---------- */
 
 @media only screen and (max-width: 440px) {
     body {
